@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(109, 196, 145);
+    
+    margin: auto;
+}
+
+#qrcode {
+    width: 500px;
+    height: 500px;
+    margin-top: 15px;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    /* ... tus estilos existentes ... */
+    width: 90%; /* Ajusta según sea necesario */
+    max-width: 600px; /* Ajusta según sea necesario */
+    margin-top: 20px;
+}
+
+#qr-data, #qr-title, #title-size {
+    color: rgba(0, 0, 0, 0.742);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.817);
+    max-width: 600px;
+    min-width: 300px;
+    height: 2rem;
+    font-size: large;
+    text-align: center;   
+    padding: 0.5rem;
+    margin: 10px;
+}
+
+
+#qr-canvas {
+    display: none;
+    margin: 0 auto; /* Centra el canvas en su contenedor */
+    /* Agrega un estilo para esconder el canvas si no quieres que ocupe espacio visual */
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgba(255, 5, 5, 0.632);
+    text-decoration: underline;
+}
+
+input[type="number"], input[type="color"], button {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+#qr-image {
+    width: 60%; /* Reducir el tamaño de visualización al 60% */
+    height: auto; /* Mantener la proporción de aspecto de la imagen */
+    margin-top: 20px; /* Espacio adicional después de la imagen QR */
+}
+label {
+    margin-top: 10px;
+    display: block; /* Hace que la etiqueta aparezca encima del campo de entrada */
+}
